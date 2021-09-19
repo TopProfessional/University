@@ -1,0 +1,44 @@
+﻿@model University.Models.Worker
+
+<div>
+    <h4>Worker</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Zarplat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zarplat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Typeofwork)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Typeofwork)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Yearatwork)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Yearatwork)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
